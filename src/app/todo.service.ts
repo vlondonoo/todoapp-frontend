@@ -47,6 +47,20 @@ export class TodoService {
   }
 
   /*B-addSortTasks*/
+
+/*Code injected by: Images-alterAddSortTasks*/
+sortPendingTasks(direction:any){
+        return this.http.get(`${BACKEND_URI}/listOrderedPending/${direction}`,this.httpOptions).pipe(
+            tap(_ => console.log('response sort')),
+            ) 
+    }
+    sortClosedTasks(direction:string){
+        return this.http.get(`${BACKEND_URI}/todosOrderedClosed/${direction}`,this.httpOptions).pipe(
+            tap(_ => console.log('response sort')),
+            ) 
+    }
+/*Code injected by: Images-alterAddSortTasks*/
+
   
  
  createTask(formData:any) { 
