@@ -1,3 +1,4 @@
+/*BCP-front-cloud-config*/
 {
   "steps": [
      {
@@ -29,3 +30,5 @@
   ],
   "images": ["gcr.io/todoapp-340315/todoappfrontend:$COMMIT_SHA"]
 }
+
+/*ECP-front-cloud-config*/
