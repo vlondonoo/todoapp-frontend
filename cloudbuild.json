@@ -1,4 +1,4 @@
-{
+/*BCP-front-cloud-config*/{
   "steps": [
      {
         "name": "gcr.io/cloud-builders/docker",
@@ -28,4 +28,4 @@
    }
   ],
   "images": ["gcr.io/todoapp-340315/todoappfrontend:$COMMIT_SHA"]
-}
+}/*ECP-front-cloud-config*/
